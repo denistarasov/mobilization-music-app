@@ -12,9 +12,9 @@
     <string name="id">100500</string>
     <string name="name">John Doe</string>
     <string name="genres">pop, rock</string>
-    <string name="tracks">100</string>
-    <string name="albums">500</string>
+    <string name="tracks">100 песен</string>
+    <string name="albums">500 альбомов</string>
     <string name="link">http://example.com</string>
-    <string name="description">bla-bla</string>
     <string name="biography_title">Биография</string>
+    <string name="description">Дима Николаевич Билан - российский певец, более известный как Дима Билан. В июне 2008 года принял данный псевдоним в качестве настоящего имени и фамилии.</string>
 </resources>

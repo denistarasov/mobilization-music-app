@@ -3,40 +3,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/musician_genres"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/genres"
-            android:textColor="#707070" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:src="@drawable/default_image_1000x1000" />
 
-        <TextView
-            android:id="@+id/musician_albums_number"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/musician_genres"
-            android:text="@string/albums"
-            android:textColor="#707070" />
+            android:layout_margin="15dp">
 
-        <TextView
-            android:id="@+id/musician_tracks_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/musician_genres"
-            android:layout_alignStart="@id/musician_albums_number"
-            android:layout_alignLeft="@id/musician_albums_number"
-            android:layout_marginStart="10pt"
-            android:layout_marginLeft="10pt"
-            android:text="@string/tracks" />
+            <TextView
+                android:id="@+id/genres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/genres"
+                android:textColor="#707070" />
 
-        <TextView
-            android:id="@+id/musician_biography_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/biography_title" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/albums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genres"
+                android:layout_marginTop="10dp"
+                android:text="@string/albums"
+                android:textColor="#707070" />
+
+            <TextView
+                android:id="@+id/tracks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genres"
+                android:layout_toEndOf="@id/albums"
+                android:layout_toRightOf="@id/albums"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/tracks"
+                android:textColor="#707070" />
+
+            <TextView
+                android:id="@+id/biography_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/albums"
+                android:layout_marginTop="10dp"
+                android:text="@string/biography_title"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/biography_title"
+                android:layout_marginTop="10dp"
+                android:text="@string/description"
+                android:textColor="#000"/>
+        </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
