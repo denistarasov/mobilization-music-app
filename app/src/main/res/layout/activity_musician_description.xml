@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/musician_genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/genres"
+            android:textColor="#707070" />
+
+        <TextView
+            android:id="@+id/musician_albums_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musician_genres"
+            android:text="@string/albums"
+            android:textColor="#707070" />
+
+        <TextView
+            android:id="@+id/musician_tracks_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/musician_genres"
+            android:layout_alignStart="@id/musician_albums_number"
+            android:layout_alignLeft="@id/musician_albums_number"
+            android:layout_marginStart="10pt"
+            android:layout_marginLeft="10pt"
+            android:text="@string/tracks" />
+
+        <TextView
+            android:id="@+id/musician_biography_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biography_title" />
+    </RelativeLayout>
+</ScrollView>
