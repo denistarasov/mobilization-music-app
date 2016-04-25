@@ -18,6 +18,10 @@
         <activity android:name=".MusicianDescriptionActivity"
             android:label="@string/musician_label">
         </activity>
+
+        <activity android:name=".JSONParserActivity"
+            android:label="@string/app_name">
+        </activity>
     </application>
 
 </manifest>
